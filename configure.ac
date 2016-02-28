@@ -1,4 +1,4 @@
-AC_INIT(webkitgtk-sharp, [2.0.0])
+AC_INIT(webkitgtk-sharp, [4.0.0])
 AC_CONFIG_SRCDIR([README])
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE
@@ -12,10 +12,10 @@ ASSEMBLY_COPYRIGHT="2014 Andreia Gaita & Stephan Sundermann"
 ASSEMBLY_DESCRIPTION="webkitgtk bindings for Mono"
 ASSEMBLY_NAME="webkitgtk-sharp"
 ASSEMBLY_NAMESPACE="WebKit"
-ASSEMBLY_PC="webkitgtk-sharp-3.0"
+ASSEMBLY_PC="webkitgtk-sharp-4.0"
 ASSEMBLY_SHORTNAME="webkitgtk"
 ASSEMBLY_TITLE="WebKit#"
-ASSEMBLY_VERSION="2.0.0"
+ASSEMBLY_VERSION="4.0.0"
 AC_SUBST([ACLOCAL_AMFLAGS], ["-I m4 \${ACLOCAL_FLAGS}"])
 
 AC_SUBST(ASSEMBLY_NAME)
@@ -136,7 +136,7 @@ AC_SUBST(MONODOCER)
 
 AM_CONDITIONAL(ENABLE_MONODOC, test "x$enable_monodoc" = "xyes")
 dnl Check for WebKit
-PKG_CHECK_MODULES(WEBKIT, webkitgtk-3.0 >= 2.0)
+PKG_CHECK_MODULES(WEBKIT, webkit2gtk-4.0 >= 2.0)
 webkitgtk_prefix=/usr
 AC_SUBST(webkitgtk_prefix)
 AC_SUBST(WEBKIT_LIBS)
@@ -152,7 +152,7 @@ AC_CONFIG_FILES([
 	sources/Makefile
 	sources/glue/Makefile
 	sources/AssemblyInfo.cs
-	webkitgtk-sharp-3.0.pc
+	webkitgtk-sharp-4.0.pc
 	doc/Makefile
 ])
 AC_CONFIG_COMMANDS([default],[[ echo timestamp > stamp-h ]],[[]])

@@ -37,7 +37,7 @@ generated-stamp: $(API)
 	 $(GAPI_CODEGEN) --generate $(srcdir)/$(API) $(GTK_SHARP_CFLAGS) \
 		--outdir=generated \
 		--glue-filename=$(GLUEDIR)/generated.c --gluelib-name=libwebkitgtksharpglue-1.10.2.so \
-		--glue-includes=webkit/webkit.h, --gapidir=$(gapidir) \
+		--glue-includes=webkit2/webkit2.h, --gapidir=$(gapidir) \
 	 	--assembly-name=$(ASSEMBLY_NAME) && touch generated-stamp
 
 $(DLL): $(build_sources) generated-stamp

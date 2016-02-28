@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api parser_version="3">
-  <namespace name="WebKit" library="webkitgtk-3.0">
+  <namespace name="WebKit" library="webkitgtk-4.0">
     <enum name="CacheModel" cname="WebKitCacheModel" type="enum" gtype="webkit_cache_model_get_type">
       <member cname="WEBKIT_CACHE_MODEL_DEFAULT" name="Default" value="0"/>
       <member cname="WEBKIT_CACHE_MODEL_DOCUMENT_VIEWER" name="DocumentViewer" value="1"/>
