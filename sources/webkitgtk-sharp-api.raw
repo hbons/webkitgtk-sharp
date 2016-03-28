@@ -9587,7 +9587,7 @@
       <property name="Length" cname="length" type="gulong" readable="true" writeable="false" construct="false" construct-only="false"/>
       <field cname="parent_instance" access="public" writeable="false" readable="true" name="ParentInstance" type="WebKitDOMObject*"/>
     </object>
-    <object name="DOMObject" cname="WebKitDOMObject" opaque="false" hidden="false" parent="GObject">
+    <!-- <object name="DOMObject" cname="WebKitDOMObject" opaque="false" hidden="false" parent="GObject">
       <class_struct cname="WebKitDOMObjectClass">
         <field cname="parentClass" access="public" writeable="false" readable="true" name="ParentClass" type="GObjectClass">
           <warning>missing glib:type-name</warning>
@@ -9599,7 +9599,7 @@
       <property name="CoreObject" cname="core-object" type="gpointer" readable="false" writeable="true" construct="false" construct-only="true"/>
       <field cname="parentInstance" access="public" writeable="false" readable="true" name="ParentInstance" type="GObject*"/>
       <field cname="coreObject" access="public" writeable="false" readable="true" name="CoreObject" type="gpointer"/>
-    </object>
+    </object> -->
     <object name="DOMPerformance" cname="WebKitDOMPerformance" opaque="false" hidden="false" parent="WebKitDOMObject">
       <implements>
         <interface cname="WebKitDOMEventTarget"/>
@@ -12447,7 +12447,7 @@
         <warning>missing glib:type-name</warning>
       </field>
     </object>
-    <object name="WebPlugin" cname="WebKitWebPlugin" opaque="false" hidden="false" parent="GObject">
+    <!-- <object name="WebPlugin" cname="WebKitWebPlugin" opaque="false" hidden="false" parent="GObject">
       <class_struct cname="WebKitWebPluginClass">
         <field cname="parentClass" access="public" writeable="false" readable="true" name="ParentClass" type="GObjectClass">
           <warning>missing glib:type-name</warning>
@@ -12483,8 +12483,8 @@
       <field cname="priv" access="public" writeable="false" readable="true" name="Priv" type="WebKitWebPluginPrivate*">
         <warning>missing glib:type-name</warning>
       </field>
-    </object>
-    <object name="WebPluginDatabase" cname="WebKitWebPluginDatabase" opaque="false" hidden="false" parent="GObject">
+    </object> -->
+    <!-- <object name="WebPluginDatabase" cname="WebKitWebPluginDatabase" opaque="false" hidden="false" parent="GObject">
       <class_struct cname="WebKitWebPluginDatabaseClass">
         <field cname="parentClass" access="public" writeable="false" readable="true" name="ParentClass" type="GObjectClass">
           <warning>missing glib:type-name</warning>
@@ -12511,7 +12511,7 @@
       <field cname="priv" access="public" writeable="false" readable="true" name="Priv" type="WebKitWebPluginDatabasePrivate*">
         <warning>missing glib:type-name</warning>
       </field>
-    </object>
+    </object> -->
     <object name="WebPolicyDecision" cname="WebKitWebPolicyDecision" opaque="false" hidden="false" parent="GObject">
       <class_struct cname="WebKitWebPolicyDecisionClass">
         <field cname="parent_class" access="public" writeable="false" readable="true" name="ParentClass" type="GObjectClass">
